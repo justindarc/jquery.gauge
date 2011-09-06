@@ -1,0 +1,25 @@
+jQuery Gauge Plugin
+Dashboard-style gauge data visualization
+
+Author: Justin D'Arcangelo (http://twitter.com/justindarc)
+GitHub: https://github.com/justindarc
+
+License:
+  The MIT License
+
+Revisions:
+	0.1		- Initial commit
+
+Usage:
+	var g = $('#gauge').gauge(); // Initialize, where #gauge is a div element
+  g.gauge.val();               // Get the value as a percentage (0-100)
+  g.gauge.val(50);             // Set the value as a percentage (0-100)
+
+Options:
+  foregroundImage - Image to be used in the foreground (e.g. glossy effect)
+  backgroundImage - Image to be used in the background
+  pointerImage    - Image to be used for the pointer
+  pointerOffset.x - X offset for the pointer image
+  pointerOffset.y - Y offset for the pointer image
+  startAngle      - Minimum angle for the pointer when the value is set to 0
+  endAngle        - Maximum angle for the pointer when the value is set to 100

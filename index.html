@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>jQuery Gauge</title>
+<script type="text/javascript" src="jquery-1.6.2.js"></script>
+<script type="text/javascript" src="jquery.gauge.js"></script>
+<script type="text/javascript">
+  $(function() {
+    var g = $('#gauge').gauge();
+    var value = 0;
+    
+    setInterval(function() {
+      if (value > 100) {
+        value = 0;
+      }
+      
+      g.gauge.val(value);
+      value++;
+    }, 100);
+  });
+</script>
+</head>
+<body>
+  <div id="gauge"></div>
+</body>
+</html>
